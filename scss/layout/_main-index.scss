@@ -1,0 +1,124 @@
+.main-i {
+    padding-top: 13rem;
+    overflow: hidden;
+
+    .banner-i1 {
+        .banner-i1-1 {
+            img {
+                display: block;
+                width: 100%;
+                margin: 0rem;
+                
+            }
+        }
+        
+        .banner-i1-2 {
+            img {
+                display: none;
+            }
+        }
+
+        ul {
+            display: flex;
+            padding: 0;
+            width: 400%;    
+            animation: slide 20s infinite alternate ease-in-out;
+
+            li {
+                width: 100%;
+                list-style: none;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        
+        @keyframes slide {
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+            
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+            
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+            
+            75% {margin-left: -300%;}
+            100% {margin-left: -300%;}
+        }
+    }
+    
+    .main-i1 {
+        background-color: $color-blanco;
+
+        div {
+            h1 {
+                margin: 0rem;
+                padding: 4rem 1rem 0rem 1rem;
+                text-align: center;
+            }
+        }
+
+        .main-i1-1 {
+            margin: 0rem;
+            width: 100%;
+            @include grid(repeat(4, minmax(16rem, 32rem)), 1fr, center, flex-start, 3rem, 3rem);
+            padding: 4rem;
+            text-align: center;
+    
+            div {
+                h3 {
+                    text-align: center;
+                    letter-spacing: 1px;
+                    padding: 2rem 2rem 2rem 2rem;
+                }
+                
+                img {
+                    border-radius: 50%;
+                    border-width: 0.1rem;
+                    object-fit: cover;
+                    width:100%;
+                    height:100%;
+                }
+            }
+
+        }
+    }
+    
+    .main-i2 {
+        background-color: $color-verde-limon;
+
+        div {
+            h2 {
+                margin: 0rem;
+                padding: 4rem 0rem 0rem 0rem;
+                text-align: center;
+            }
+        }
+        
+        .main-i2-1 {
+            margin: 0rem;
+            width: 100%;
+            @include grid(repeat(4, minmax(16rem, 32rem)), 1fr, center, flex-start, 3rem, 3rem);
+            padding: 4rem;
+            text-align: center;
+            
+            div {
+                h3 {
+                    text-align: center;
+                    letter-spacing: 1px;
+                    padding: 2rem 2rem 2rem 2rem;
+                }
+
+                img {
+                    border-radius: 50%;
+                    border-width: 0.1rem;
+                    object-fit: cover;
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+    }
+}

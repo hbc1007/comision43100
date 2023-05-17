@@ -1,0 +1,66 @@
+.footer-1 {
+    .footer-1-1 {
+        width: 100%;
+        @include grid(37% 37% 26%, 1fr, none, flex-start, none, none);
+        text-align: center;
+        padding: 2rem 10rem 2rem 10rem;
+
+        h3 {
+            padding: 2rem 0rem 1rem 0rem;
+        }
+
+        p {
+            letter-spacing: 0.1rem;
+        }
+
+        .footer-1-1-1 {
+            padding: 0rem 1rem 0rem 1rem;
+            text-decoration: none;
+        }
+
+        .footer-1-1-2 {
+            padding: 0rem 1rem 0rem 1rem;
+            text-decoration: none;
+
+            .footer-1-1-2-1 {
+                width: 100%;
+                @include flex(row wrap, none, center, none, flex-start, 2rem, none);
+            }
+
+            .footer-1-1-2-2 {
+                width: 100%;
+                @include flex(row wrap, none, center, none, flex-start, 2rem, none);   
+            }
+
+            img {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+
+        .footer-1-1-4 {
+            width: 100%;
+                @include flex(column wrap, none, center, center, flex-start, none, 4rem);
+
+            .footer-1-1-4-1 {
+                width: 100%;
+                @include flex(row wrap, none, center, none, flex-start, 2rem, none);
+            }
+
+            img {
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+        }
+    }
+
+    .footer-1-2 {
+        padding: 2rem 10rem 2rem 10rem;
+
+        h4 {
+            font-weight: normal;
+            padding: 3rem;
+        }
+    }
+}
+

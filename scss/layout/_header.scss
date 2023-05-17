@@ -1,0 +1,78 @@
+.header-1 {
+    background-color: $color-lila;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    .header-1-1 {
+        @include flex(row wrap, none, space-between, none, center, none, none);
+        padding: 0rem 4rem 0rem 4rem;
+        text-decoration: none;
+
+        .logo {
+            width: 25.9rem;
+            height: 9rem;
+        }
+
+        .icono {
+            width: 3.2rem;
+            height: 3.2rem;
+            margin-left: 1rem;
+        }
+    }
+
+    /***************************************************/
+    .header-1-2 {
+        label {
+            display: none;
+
+            .menu {
+                width: 3.2rem;
+                height: 3.2rem;
+                margin: 1rem;
+            }
+
+            :hover {
+                cursor: pointer;
+            }
+        }
+
+        .header-1-2-1 {
+            display: none;
+        }
+
+        .navbar {
+            position: center;
+
+            ul {
+                margin: 0rem;
+                padding: 0rem;
+                list-style: none;
+                @include flex(none, row, center, none, none, 4rem, none);
+
+                li {
+                    a {
+                        display: block;
+                        font-size: 2rem;
+                        color: $color-blanco;
+                        border-radius: 0.3rem;
+                        letter-spacing: 0.1rem;
+                        padding: 0.4rem 0rem 0.4rem 0rem;
+                        text-align: center;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: $color-verde-limon;
+                            transition: all 0.5s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        #btn-menu {
+            display: none;
+        }
+    }
+}
