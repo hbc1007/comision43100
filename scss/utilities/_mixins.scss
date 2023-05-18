@@ -9,11 +9,12 @@
     row-gap: $row-gap;
 }
 
-@mixin grid($grid-template-columns, $grid-template-rows, $justify-content, $align-items, $column-gap, $row-gap) {
+@mixin grid($grid-template-columns, $grid-template-rows, $justify-content, $align-content, $align-items, $column-gap, $row-gap) {
     display: grid;
     grid-template-columns: $grid-template-columns;
     grid-template-rows: $grid-template-rows;
     justify-content: $justify-content;
+    align-content: $align-content;
     align-items: $align-items;
     column-gap: $column-gap;
     row-gap: $row-gap;

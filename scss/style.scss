@@ -8,6 +8,7 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/main-index";
+@import "./layout/main-agendas";
 @import "./layout/media-1440";
 @import "./layout/media-1024";
 @import "./layout/media-768";
@@ -16,7 +17,7 @@
     width: 100%;
     height: auto;
     margin: auto;
-    @include grid(1fr, repeat(3,auto), none, none, none, none);
+    @include grid(1fr, repeat(3,auto), none, none, none, none, none);
     grid-template-areas:
     "_header"
     "_main"

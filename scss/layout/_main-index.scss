@@ -63,7 +63,7 @@
         .main-i1-1 {
             margin: 0rem;
             width: 100%;
-            @include grid(repeat(4, minmax(16rem, 32rem)), 1fr, center, flex-start, 3rem, 3rem);
+            @include grid(repeat(4, minmax(16rem, 32rem)), 1fr, center, center, center, 3rem, 3rem);
             padding: 4rem;
             text-align: center;
     
@@ -73,15 +73,25 @@
                     letter-spacing: 1px;
                     padding: 2rem 2rem 2rem 2rem;
                 }
-                
-                img {
+
+                // img {
+                //     border-radius: 50%;
+                //     border-width: 0.1rem;
+                //     object-fit: cover;
+                //     width:100%;
+                //     height:100%;
+                // }
+
+                .circulo-productos {
+                    background-color: $color-verde-limon;
                     border-radius: 50%;
                     border-width: 0.1rem;
-                    object-fit: cover;
-                    width:100%;
-                    height:100%;
+                    width: 25rem;
+                    height: 25rem;
                 }
             }
+
+            
 
         }
     }
@@ -100,7 +110,7 @@
         .main-i2-1 {
             margin: 0rem;
             width: 100%;
-            @include grid(repeat(4, minmax(16rem, 32rem)), 1fr, center, flex-start, 3rem, 3rem);
+            @include grid(repeat(4, minmax(16rem, 32rem)), 1fr, center, center,center, 3rem, 3rem);
             padding: 4rem;
             text-align: center;
             
@@ -111,12 +121,20 @@
                     padding: 2rem 2rem 2rem 2rem;
                 }
 
-                img {
+                // img {
+                //     border-radius: 50%;
+                //     border-width: 0.1rem;
+                //     object-fit: cover;
+                //     width:100%;
+                //     height:100%;
+                // }
+
+                .circulo-colecciones {
+                    background-color: $color-blanco;
                     border-radius: 50%;
                     border-width: 0.1rem;
-                    object-fit: cover;
-                    width:100%;
-                    height:100%;
+                    width: 25rem;
+                    height: 25rem;
                 }
             }
         }

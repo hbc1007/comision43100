@@ -91,14 +91,26 @@
 
         .main-i1 {
             .main-i1-1 {
-                @include grid(repeat(2, minmax(16rem, 26rem)), repeat(2,1fr), center, flex-start, 3rem, 3rem);
+                @include grid(repeat(2, minmax(16rem, 26rem)), repeat(2,1fr), center, none, flex-start, 3rem, 3rem);
             }
         }
         
         .main-i2 {
             .main-i2-1 {
-                @include grid(repeat(2, minmax(16rem, 26rem)), repeat(2,1fr), center, flex-start, 3rem, 3rem);
+                @include grid(repeat(2, minmax(16rem, 26rem)), repeat(2,1fr), center, none, flex-start, 3rem, 3rem);
             }
+        }
+    }
+
+    /******************************************/
+    /*pagina agendas.html - 1024              */
+    /******************************************/
+
+    .main-g {
+        padding-top: 8.9rem;
+
+        .main-g1 {
+            @include grid(repeat(2, minmax(16rem, 26rem)), repeat(3, 1fr), center, none, flex-start, 3rem, 3rem);
         }
     }
 
@@ -109,7 +121,7 @@
 
     .footer-1 {
         .footer-1-1 {
-            @include grid(50% 50%, 1fr 1fr, none, flex-start, none, none);
+            @include grid(50% 50%, 1fr 1fr, none, none, flex-start, none, none);
         }
 
         .footer-1-2 {

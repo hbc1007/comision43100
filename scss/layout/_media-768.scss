@@ -29,6 +29,7 @@
         }
     }
 
+
     /******************************************/
     /***************MAIN - 768*****************/
     /******************************************/
@@ -57,16 +58,39 @@
 
         .main-i1 {
             .main-i1-1 {
-                @include grid(25rem, 1fr, center, center, none, 3rem);
+                @include grid(25rem, 1fr, center, none, center, none, 3rem);
             }
         }
         
         .main-i2 {
             .main-i2-1 {
-                @include grid(25rem, 1fr, center, center, none, 4rem);
+                @include grid(25rem, 1fr, center, none, center, none, 4rem);
             }
         }
     }
+
+    /******************************************/
+    /*pagina agendas.html - 768               */
+    /******************************************/
+
+    .main-g {
+        .banner-g1 {
+            .banner-g1-1 {
+                display: none;
+            }
+
+            .banner-g1-2 {
+                display: block;
+                width: 100%;
+                margin: 0rem;
+            }
+        }
+
+        .main-g1 {
+            @include grid(25rem, 1fr, center, none, center, none, 3rem);
+        }
+    }
+
 
     /******************************************/
     /**************FOOTER - 768****************/
@@ -75,7 +99,7 @@
     .footer-1 {
         .footer-1-1 {
             width: 100%;
-            @include grid(1fr, repeat(2, 1fr) repeat(2, 25rem), center, center, none, none);
+            @include grid(1fr, repeat(2, 1fr) repeat(2, 25rem), center, none, center, none, none);
 
             .footer-1-1-1 {
                 padding: 2rem 4rem 2rem 4rem;

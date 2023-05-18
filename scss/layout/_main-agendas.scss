@@ -1,0 +1,67 @@
+.main-g {
+    padding-top: 13rem;
+
+    .banner-g1 {
+        .banner-g1-1 {
+            display: block;
+            width: 100%;
+            margin: 0rem;
+        }
+        
+        .banner-g1-2 {
+            display: none;
+        }
+    }
+
+    div {
+        h1 {
+            margin: 0rem;
+            padding: 4rem 0rem 0rem 0rem;
+            text-align: center;
+        }
+    }
+
+    .main-g1 {
+        margin: 0rem;
+        width: 100%;
+        background-color: $color-blanco;
+        @include grid(repeat(3, minmax(16rem, 32rem)), repeat(2, 1fr), center, none, flex-start, 3rem, 3rem);
+        padding: 4rem;
+        text-align: center;
+
+        div {
+            h4 {
+                text-align: center;
+                padding-top: 1rem;
+            }
+        }
+        
+        img {
+            border-radius: 1rem;
+            border-width: 0.1rem;
+            border-style:solid;
+            border-color: $color-negro;
+            object-fit: cover;
+            width:100%;
+            height:100%;
+        }
+
+        .product{
+            padding: 1.5rem 3rem;
+            line-height: 2;
+            @include flex(none, column, none, none, none, none, none);
+        }
+        
+        .price{
+            font-size: 1.8rem;
+        }
+        
+        .product button{
+            font-size: 1.4rem;
+            background-color: $color-negro;
+            color: $color-blanco;
+            padding: 1rem 1rem;
+            cursor: pointer;
+        }
+    }
+}
