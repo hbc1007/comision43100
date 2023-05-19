@@ -6,63 +6,59 @@ window.addEventListener('scroll', function() {
 });
 
 // ------------------------------------------------------------------//
-let resultadoTotal;
-let resultadoParcial;
+//VARIABLES
+let IGV = 0.18
+let totalIGVparcial;
+let totalVTAparcial;
+let totalIGVtotal;
+let totalVTAtotal;
 
-function calcularVenta(precio){
-    let iva;
-    let tot;
-    iva = precio * 0.18;
-    tot = precio + iva;
-    resultadoParcial = tot;
-    return resultadoParcial;
+//CLASE
+class Producto{
+    constructor(item, producto, precio, moneda, dscto){
+        this.item = item;
+        this.producto = producto;
+        this.precio = precio;
+        this.moneda = moneda;
+        this.dscto = dscto;
+    }
+    //METODO
+    calcularPrecio(){
+        totalIGVparcial = this.precio * IGV;
+        totalVTAparcial = this.precio + totalIGVparcial;
+        totalVTAparcial = totalVTAparcial - (totalVTAparcial * (this.dscto / 100));
+        alert('El precio neto venta del producto ' +this.producto+ ' es ' +totalVTAparcial+ ' '+this.moneda);
+    }
 }
 
-const btns = document.querySelectorAll('button[id^="button-"]');
+const buttons = document.querySelectorAll('button[id^="button-"]');
 
-btns.forEach((btn) => {
+buttons.forEach((btn) => {
     btn.addEventListener('click', e => {
         resultadoParcial=0;
-        switch(e.target.id){
-            case 'button-1':
-                let nombre1 = "Agenda 2023 Vip Executive";
-                let precio1 = 18.98;
-                calcularVenta(18.98)
-                alert("La "+nombre1+" cuesta "+resultadoParcial);
-                break;
-            case 'button-2':
-                let nombre2 = "Agenda Dgnottas Pocket";
-                let precio2 = 3.98;
-                calcularVenta(3.98)
-                alert("La "+nombre2+" cuesta "+resultadoParcial);
-                break;
-            case 'button-3':
-                let nombre3 = "Agenda Dgnottas Pocket Flores";
-                let precio3 = 3.98;
-                calcularVenta(3.98)
-                alert("La "+nombre3+" cuesta "+resultadoParcial);
-                break;
-            case 'button-4':
-                let nombre4 = "Agenda Dgnottas Pocket Arco Iris";
-                let precio4 = 3.98;
-                calcularVenta(3.98)
-                alert("La "+nombre4+" cuesta "+resultadoParcial);
-                break;
-            case 'button-5':
-                let nombre5 = "Agenda 2023 Gaelle Escritorio Diaria";
-                let precio5 = 21.98;
-                calcularVenta(21.98)
-                alert("La "+nombre5+" cuesta "+resultadoParcial);
-                break;
-            case 'button-6':
-                let nombre6 = "Agenda 2023 Hecha Pa Ser Libre";
-                let precio6 = 13.98;
-                calcularVenta(13.98)
-                alert("La "+nombre6+" cuesta "+resultadoParcial);
-                break;
-            default:
-                console.log('Producto sin stock');
-                break;
+        if(e.target.id == 'button-1'){
+            const producto1 = new Producto(1, 'Agenda 2023 Vip Executive', 18.98, 'Soles', 15);
+            producto1.calcularPrecio();
+        }
+        else if(e.target.id == 'button-2'){
+            const producto2 = new Producto(2, 'Agenda Dgnottas Pocket', 3.98, 'Soles', 5);
+            producto2.calcularPrecio();
+        }
+        else if(e.target.id == 'button-3'){
+            const producto3 = new Producto(3, 'Agenda Dgnottas Pocket Flores', 3.98, 'Soles', 5);
+            producto3.calcularPrecio();
+        }
+        else if(e.target.id == 'button-4'){
+            const producto4 = new Producto(4, 'Agenda Dgnottas Pocket Arco Iris', 3.98, 'Soles', 5);
+            producto4.calcularPrecio();
+        }
+        else if(e.target.id == 'button-5'){
+            const producto5 = new Producto(5, 'Agenda 2023 Gaelle Escritorio Diaria', 21.98, 'Soles', 25);
+            producto5.calcularPrecio();
+        }
+        else if(e.target.id == 'button-6'){
+            const producto6 = new Producto(6, 'Agenda 2023 Hecha Pa Ser Libre', 13.98, 'Soles', 10);
+            producto6.calcularPrecio();
         }
     });
 });

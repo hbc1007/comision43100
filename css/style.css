@@ -298,9 +298,10 @@ h6 {
     row-gap: 3rem;
     padding: 4rem;
     text-align: center; }
-    .main-g .main-g1 div h4 {
-      text-align: center;
-      padding-top: 1rem; }
+    .main-g .main-g1 div p {
+      margin: 0;
+      font-weight: bold;
+      text-align: center; }
     .main-g .main-g1 img {
       border-radius: 1rem;
       border-width: 0.1rem;
@@ -315,15 +316,14 @@ h6 {
       display: flex;
       flex-flow: none;
       flex-direction: column;
-      justify-content: none;
-      align-content: none;
+      justify-content: center;
+      align-content: center;
       align-items: none;
       column-gap: none;
       row-gap: none; }
-    .main-g .main-g1 .price {
-      font-size: 1.8rem; }
     .main-g .main-g1 .product button {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
+      font-weight: bold;
       background-color: black;
       color: white;
       padding: 1rem 1rem;

@@ -30,9 +30,10 @@
         text-align: center;
 
         div {
-            h4 {
+            p {
+                margin: 0;
+                font-weight: bold;
                 text-align: center;
-                padding-top: 1rem;
             }
         }
         
@@ -49,15 +50,12 @@
         .product{
             padding: 1.5rem 3rem;
             line-height: 2;
-            @include flex(none, column, none, none, none, none, none);
+            @include flex(none, column, center, center, none, none, none);
         }
-        
-        .price{
-            font-size: 1.8rem;
-        }
-        
+
         .product button{
-            font-size: 1.4rem;
+            font-size: 1.6rem;
+            font-weight: bold;
             background-color: $color-negro;
             color: $color-blanco;
             padding: 1rem 1rem;
