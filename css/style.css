@@ -39,6 +39,7 @@ h6 {
 
 .header-1 {
   background-color: #aba2e1;
+  color: black;
   position: fixed;
   left: 0;
   top: 0;
@@ -56,12 +57,101 @@ h6 {
     padding: 0rem 4rem 0rem 4rem;
     text-decoration: none; }
     .header-1 .header-1-1 .logo {
-      width: 25.9rem;
-      height: 9rem; }
-    .header-1 .header-1-1 .icono {
+      padding-top: 1rem;
+      width: 20rem;
+      height: 6rem; }
+    .header-1 .header-1-1 .icon-cart {
       width: 3.2rem;
       height: 3.2rem;
+      stroke: #000;
       margin-left: 1rem; }
+    .header-1 .header-1-1 .icon-cart:hover {
+      cursor: pointer; }
+    .header-1 .header-1-1 .container-icon {
+      position: relative; }
+    .header-1 .header-1-1 .count-products {
+      position: absolute;
+      top: 55%;
+      right: 0;
+      background-color: black;
+      color: white;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      flex-flow: none;
+      flex-direction: none;
+      justify-content: center;
+      align-content: none;
+      align-items: center;
+      column-gap: none;
+      row-gap: none;
+      border-radius: 50%; }
+    .header-1 .header-1-1 #contador-productos {
+      font-size: 1.2rem; }
+    .header-1 .header-1-1 .container-cart-products {
+      position: absolute;
+      top: 5rem;
+      right: 0;
+      background-color: white;
+      width: 50rem;
+      z-index: 1;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+      border-radius: 1rem; }
+    .header-1 .header-1-1 .cart-product {
+      display: flex;
+      flex-flow: none;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: none;
+      align-items: center;
+      column-gap: 4rem;
+      row-gap: none;
+      padding: 3rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    .header-1 .header-1-1 .info-cart-product {
+      display: flex;
+      flex-flow: none;
+      flex-direction: none;
+      justify-content: space-between;
+      align-content: none;
+      align-items: none;
+      column-gap: none;
+      row-gap: none;
+      flex: 0.8; }
+    .header-1 .header-1-1 .titulo-producto-carrito {
+      font-size: 1.6rem;
+      font-weight: 700; }
+    .header-1 .header-1-1 .precio-producto-carrito {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-left: 10px; }
+    .header-1 .header-1-1 .cantidad-producto-carrito {
+      font-weight: 400;
+      font-size: 1.6rem; }
+    .header-1 .header-1-1 .icon-close {
+      width: 2rem;
+      height: 2rem; }
+    .header-1 .header-1-1 .icon-close:hover {
+      stroke: red;
+      cursor: pointer; }
+    .header-1 .header-1-1 .cart-total {
+      display: flex;
+      flex-flow: none;
+      flex-direction: none;
+      justify-content: center;
+      align-content: none;
+      align-items: center;
+      column-gap: 2rem;
+      row-gap: 2ren;
+      padding: 2rem 0; }
+      .header-1 .header-1-1 .cart-total h3 {
+        font-size: 1.8rem;
+        font-weight: 700; }
+    .header-1 .header-1-1 .total-pagar {
+      font-size: 1.8rem;
+      font-weight: 900; }
+    .header-1 .header-1-1 .hidden-cart {
+      display: none; }
   .header-1 .header-1-2 label {
     display: none; }
     .header-1 .header-1-2 label .menu {
@@ -89,7 +179,7 @@ h6 {
       .header-1 .header-1-2 .navbar ul li a {
         display: block;
         font-size: 2rem;
-        color: white;
+        color: black;
         border-radius: 0.3rem;
         letter-spacing: 0.1rem;
         padding: 0.4rem 0rem 0.4rem 0rem;
@@ -177,7 +267,7 @@ h6 {
     padding: 3rem; }
 
 .main-i {
-  padding-top: 13rem;
+  padding-top: 10.8rem;
   overflow: hidden; }
   .main-i .banner-i1 .banner-i1-1 img {
     display: block;
@@ -236,12 +326,16 @@ h6 {
         text-align: center;
         letter-spacing: 1px;
         padding: 2rem 2rem 2rem 2rem; }
-      .main-i .main-i1 .main-i1-1 div .circulo-productos {
-        background-color: #dae47a;
-        border-radius: 50%;
-        border-width: 0.1rem;
+      .main-i .main-i1 .main-i1-1 div img {
         width: 25rem;
-        height: 25rem; }
+        height: 25rem;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        transition: all .5s; }
+      .main-i .main-i1 .main-i1-1 div .item figure {
+        overflow: hidden; }
+      .main-i .main-i1 .main-i1-1 div .item:hover img {
+        transform: scale(1.2); }
   .main-i .main-i2 {
     background-color: #dae47a; }
     .main-i .main-i2 div h2 {
@@ -265,6 +359,12 @@ h6 {
         text-align: center;
         letter-spacing: 1px;
         padding: 2rem 2rem 2rem 2rem; }
+      .main-i .main-i2 .main-i2-1 div img {
+        border-radius: 50%;
+        border-width: 0.1rem;
+        object-fit: cover;
+        width: 100%;
+        height: 100%; }
       .main-i .main-i2 .main-i2-1 div .circulo-colecciones {
         background-color: white;
         border-radius: 50%;
@@ -310,7 +410,7 @@ h6 {
       object-fit: cover;
       width: 100%;
       height: 100%; }
-    .main-g .main-g1 .product {
+    .main-g .main-g1 .info-product {
       padding: 1.5rem 3rem;
       line-height: 2;
       display: flex;
@@ -319,14 +419,14 @@ h6 {
       justify-content: center;
       align-content: center;
       align-items: none;
-      column-gap: none;
-      row-gap: none; }
-    .main-g .main-g1 .product button {
-      font-size: 1.6rem;
-      font-weight: bold;
+      column-gap: 1rem;
+      row-gap: 1rem; }
+    .main-g .main-g1 .info-product button {
+      border: none;
+      background: none;
       background-color: black;
       color: white;
-      padding: 1rem 1rem;
+      padding: 1.5rem 1rem;
       cursor: pointer; }
 
 @media (max-width: 1440px) {
@@ -338,6 +438,11 @@ h6 {
   /******************************************/
   /***************MAIN - 1440****************/
   /******************************************/
+  /******************************************/
+  /*pagina inicio.html - 1440               */
+  /******************************************/
+  .main-i {
+    padding-top: 10.5rem; }
   /******************************************/
   /**************FOOTER - 1440***************/
   /******************************************/
@@ -368,11 +473,11 @@ h6 {
       align-items: center;
       column-gap: none;
       row-gap: none;
-      padding: 1rem;
+      padding: 2rem;
       text-decoration: none; }
       .header-1 .header-1-2 .header-1-2-1 .logo {
-        width: 20.1rem;
-        height: 7rem; }
+        width: 18rem;
+        height: 5rem; }
       .header-1 .header-1-2 .header-1-2-1 .icono {
         width: 2.4rem;
         height: 2.4rem;
@@ -409,7 +514,7 @@ h6 {
   /*pagina inicio.html - 1024               */
   /******************************************/
   .main-i {
-    padding-top: 8.9rem; }
+    padding-top: 6.9rem; }
     .main-i .main-i1 .main-i1-1 {
       display: grid;
       grid-template-columns: repeat(2, minmax(16rem, 26rem));
@@ -436,7 +541,7 @@ h6 {
     .main-g .main-g1 {
       display: grid;
       grid-template-columns: repeat(2, minmax(16rem, 26rem));
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       justify-content: center;
       align-content: none;
       align-items: flex-start;
@@ -464,8 +569,8 @@ h6 {
   .header-1 .header-1-2 .header-1-2-1 {
     padding: 2rem 1rem 2rem 1rem; }
     .header-1 .header-1-2 .header-1-2-1 .logo {
-      width: 14.4rem;
-      height: 5rem; }
+      width: 15rem;
+      height: 4rem; }
     .header-1 .header-1-2 .header-1-2-1 .icono {
       width: 2.4rem;
       height: 2.4rem;
@@ -481,7 +586,7 @@ h6 {
   /*pagina inicio.html - 768                */
   /******************************************/
   .main-i {
-    padding-top: 8rem; }
+    padding-top: 7.4rem; }
     .main-i .banner-i1 .banner-i1-1 img {
       display: none; }
     .main-i .banner-i1 .banner-i1-2 img {
@@ -568,7 +673,8 @@ h6 {
   grid-template-areas: "_header" "_main" "_footer"; }
 
 header {
-  grid-area: _header; }
+  grid-area: _header;
+  color: black; }
 
 header div.abajo {
   background-color: #7167aa; }
@@ -581,5 +687,5 @@ main {
 
 footer {
   grid-area: _footer;
-  color: white;
+  color: black;
   background-color: #aba2e1; }

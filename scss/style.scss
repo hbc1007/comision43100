@@ -26,6 +26,7 @@
 
 header {
     grid-area: _header;
+    color: $color-negro;
 }
 
 header div.abajo {
@@ -43,6 +44,6 @@ main {
 
 footer {
     grid-area: _footer;
-    color: $color-blanco;
+    color: $color-negro;
     background-color: $color-lila;
 }

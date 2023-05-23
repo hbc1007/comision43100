@@ -1,5 +1,6 @@
 .header-1 {
     background-color: $color-lila;
+    color: $color-negro;
     position: fixed;
     left: 0;
     top: 0;
@@ -11,14 +12,109 @@
         text-decoration: none;
 
         .logo {
-            width: 25.9rem;
-            height: 9rem;
+            padding-top: 1rem;
+            width: 20rem;
+            height: 6rem;
         }
 
-        .icono {
+        .icon-cart {
             width: 3.2rem;
             height: 3.2rem;
+            stroke: #000;
             margin-left: 1rem;
+        }
+
+        .icon-cart:hover{
+            cursor: pointer;
+        }
+
+        .container-icon{
+            position: relative;
+        }
+        
+        .count-products{
+            position: absolute;
+            top: 55%;
+            right: 0;
+            background-color: $color-negro;
+            color: $color-blanco;
+            width: 2.5rem;
+            height: 2.5rem;
+            @include flex(none, none, center, none, center, none, none);
+            border-radius: 50%;
+        }
+        
+        #contador-productos{
+            font-size: 1.2rem;
+        }
+        
+        .container-cart-products{
+            position: absolute;
+            top: 5rem;
+            right: 0;
+            background-color: $color-blanco;
+            width: 50rem;
+            z-index: 1;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.20);
+            border-radius: 1rem;
+            
+        }
+        
+        .cart-product{
+            @include flex(none, row, space-between, none, center, 4rem, none);
+            padding: 3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+        
+        }
+        
+        .info-cart-product{
+            @include flex(none, none, space-between, none, none, none, none);
+            flex: 0.8;
+        }
+        
+        .titulo-producto-carrito{
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+        
+        .precio-producto-carrito{
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+        
+        .cantidad-producto-carrito{
+            font-weight: 400;
+            font-size: 1.6rem;
+        }
+        
+        .icon-close{
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        .icon-close:hover{
+            stroke: red;
+            cursor: pointer;
+        }
+        
+        .cart-total{
+            @include flex(none, none, center, none, center, 2rem, 2ren);
+            padding: 2rem 0;
+
+            h3{
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+        }
+        
+        .total-pagar{
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+        
+        .hidden-cart{
+            display: none;
         }
     }
 
@@ -55,7 +151,7 @@
                     a {
                         display: block;
                         font-size: 2rem;
-                        color: $color-blanco;
+                        color: $color-negro;
                         border-radius: 0.3rem;
                         letter-spacing: 0.1rem;
                         padding: 0.4rem 0rem 0.4rem 0rem;

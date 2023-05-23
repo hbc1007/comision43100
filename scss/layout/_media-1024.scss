@@ -23,12 +23,12 @@
 
             .header-1-2-1 {
                 @include flex(row wrap, none, space-between, none, center, none, none);
-                padding: 1rem;
+                padding: 2rem;
                 text-decoration: none;
 
                 .logo {
-                    width: 20.1rem;
-                    height: 7rem;
+                    width: 18rem;
+                    height: 5rem;
                 }
                 
                 .icono {
@@ -87,7 +87,7 @@
     /******************************************/
 
     .main-i {
-        padding-top: 8.9rem;
+        padding-top: 6.9rem;
 
         .main-i1 {
             .main-i1-1 {
@@ -110,7 +110,7 @@
         padding-top: 8.9rem;
 
         .main-g1 {
-            @include grid(repeat(2, minmax(16rem, 26rem)), repeat(3, 1fr), center, none, flex-start, 3rem, 3rem);
+            @include grid(repeat(2, minmax(16rem, 26rem)), repeat(2, 1fr), center, none, flex-start, 3rem, 3rem);
         }
     }
 

@@ -47,18 +47,18 @@
             height:100%;
         }
 
-        .product{
+        .info-product{
             padding: 1.5rem 3rem;
             line-height: 2;
-            @include flex(none, column, center, center, none, none, none);
+            @include flex(none, column, center, center, none, 1rem, 1rem);
         }
 
-        .product button{
-            font-size: 1.6rem;
-            font-weight: bold;
+        .info-product button{
+            border: none;
+            background: none;
             background-color: $color-negro;
             color: $color-blanco;
-            padding: 1rem 1rem;
+            padding: 1.5rem 1rem;
             cursor: pointer;
         }
     }
