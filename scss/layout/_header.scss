@@ -5,170 +5,164 @@
     left: 0;
     top: 0;
     width: 100%;
+}
 
-    .header-1-1 {
-        @include flex(row wrap, none, space-between, none, center, none, none);
-        padding: 0rem 4rem 0rem 4rem;
-        text-decoration: none;
+.header-1-1 {
+    @include flex(row wrap, none, space-between, none, center, none, none);
+    padding: 0rem 4rem 0rem 4rem;
+    text-decoration: none;
+}
 
-        .logo {
-            padding-top: 1rem;
-            width: 20rem;
-            height: 6rem;
-        }
+.logo {
+    padding-top: 1rem;
+    width: 20rem;
+    height: 6rem;
+}
 
-        .icon-cart {
-            width: 3.2rem;
-            height: 3.2rem;
-            stroke: #000;
-            margin-left: 1rem;
-        }
+.icon-cart {
+    width: 3.2rem;
+    height: 3.2rem;
+    stroke: #000;
+    margin-left: 1rem;
+}
 
-        .icon-cart:hover{
-            cursor: pointer;
-        }
+.icon-cart:hover{
+    cursor: pointer;
+}
 
-        .container-icon{
-            position: relative;
-        }
-        
-        .count-products{
-            position: absolute;
-            top: 55%;
-            right: 0;
-            background-color: $color-negro;
-            color: $color-blanco;
-            width: 2.5rem;
-            height: 2.5rem;
-            @include flex(none, none, center, none, center, none, none);
-            border-radius: 50%;
-        }
-        
-        #contador-productos{
-            font-size: 1.2rem;
-        }
-        
-        .container-cart-products{
-            position: absolute;
-            top: 5rem;
-            right: 0;
-            background-color: $color-blanco;
-            width: 50rem;
-            z-index: 1;
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.20);
-            border-radius: 1rem;
-            
-        }
-        
-        .cart-product{
-            @include flex(none, row, space-between, none, center, 4rem, none);
-            padding: 3rem;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-        
-        }
-        
-        .info-cart-product{
-            @include flex(none, none, space-between, none, none, none, none);
-            flex: 0.8;
-        }
-        
-        .titulo-producto-carrito{
-            font-size: 1.6rem;
-            font-weight: 700;
-        }
-        
-        .precio-producto-carrito{
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-left: 10px;
-        }
-        
-        .cantidad-producto-carrito{
-            font-weight: 400;
-            font-size: 1.6rem;
-        }
-        
-        .icon-close{
-            width: 2rem;
-            height: 2rem;
-        }
-        
-        .icon-close:hover{
-            stroke: red;
-            cursor: pointer;
-        }
-        
-        .cart-total{
-            @include flex(none, none, center, none, center, 2rem, 2ren);
-            padding: 2rem 0;
+.container-icon{
+    position: relative;
+}
 
-            h3{
-                font-size: 1.8rem;
-                font-weight: 700;
-            }
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: $color-negro;
+    color: $color-blanco;
+    width: 2.5rem;
+    height: 2.5rem;
+    @include flex(none, none, center, none, center, none, none);
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 1.2rem;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background-color: $color-blanco;
+    width: 50rem;
+    z-index: 1;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.20);
+    border-radius: 1rem;
+}
+
+.cart-product{
+    @include flex(none, row, space-between, none, center, 4rem, none);
+    padding: 3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-cart-product{
+    @include flex(none, none, space-between, none, none, none, none);
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.precio-producto-carrito{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.icon-close{
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    @include flex(none, none, center, none, center, 2rem, 2ren);
+    padding: 2rem 0;
+}
+
+.cart-total h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+/***************************************************/
+.header-1-2 label {
+    display: none;
+}
+
+.menu {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 1rem;
+}
+
+:hover {
+    cursor: pointer;
+}
+
+.header-1-2-1 {
+    display: none;
+}
+
+.navbar {
+    position: center;
+}
+
+.navbar ul {
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+    @include flex(none, row, center, none, none, 4rem, none);
+}
+
+.navbar ul li a{
+    display: block;
+    font-size: 2rem;
+    color: $color-negro;
+    border-radius: 0.3rem;
+    letter-spacing: 0.1rem;
+    padding: 0.4rem 0rem 0.4rem 0rem;
+    text-align: center;
+    text-decoration: none;
+
+        &:hover {
+            color: $color-verde-limon;
+            transition: all 0.5s ease-in-out;
         }
-        
-        .total-pagar{
-            font-size: 1.8rem;
-            font-weight: 900;
-        }
-        
-        .hidden-cart{
-            display: none;
-        }
-    }
+}
 
-    /***************************************************/
-    .header-1-2 {
-        label {
-            display: none;
-
-            .menu {
-                width: 3.2rem;
-                height: 3.2rem;
-                margin: 1rem;
-            }
-
-            :hover {
-                cursor: pointer;
-            }
-        }
-
-        .header-1-2-1 {
-            display: none;
-        }
-
-        .navbar {
-            position: center;
-
-            ul {
-                margin: 0rem;
-                padding: 0rem;
-                list-style: none;
-                @include flex(none, row, center, none, none, 4rem, none);
-
-                li {
-                    a {
-                        display: block;
-                        font-size: 2rem;
-                        color: $color-negro;
-                        border-radius: 0.3rem;
-                        letter-spacing: 0.1rem;
-                        padding: 0.4rem 0rem 0.4rem 0rem;
-                        text-align: center;
-                        text-decoration: none;
-
-                        &:hover {
-                            color: $color-verde-limon;
-                            transition: all 0.5s ease-in-out;
-                        }
-                    }
-                }
-            }
-        }
-
-        #btn-menu {
-            display: none;
-        }
-    }
+#btn-menu {
+    display: none;
 }

@@ -69,26 +69,27 @@
         }
     }
 
+
     /******************************************/
     /*pagina agendas.html - 768               */
     /******************************************/
 
-    .main-g {
-        .banner-g1 {
-            .banner-g1-1 {
-                display: none;
-            }
+    .banner-g1-1 {
+        display: none;
+    }
 
-            .banner-g1-2 {
-                display: block;
-                width: 100%;
-                margin: 0rem;
-            }
-        }
+    .banner-g1-2 {
+        display: block;
+        width: 100%;
+        margin: 0rem;
+    }
 
-        .main-g1 {
-            @include grid(25rem, 1fr, center, none, center, none, 3rem);
-        }
+    // .main-g1 {
+    //     @include grid(25rem, 1fr, center, none, center, none, 3rem);
+    // }
+
+    .container-items {
+        @include grid(25rem, 1fr, center, none, center, none, 3rem);
     }
 
 

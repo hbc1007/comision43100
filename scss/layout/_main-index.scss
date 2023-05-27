@@ -75,28 +75,33 @@
                 }
 
                 img {
-                    // border-radius: 50%;
-                    // border-width: 0.1rem;
-                    // object-fit: cover;
-                    width: 25rem;
-                    height: 25rem;
+                    border-radius: 50%;
+                    border-width: 0.1rem;
                     object-fit: cover;
-                    border-radius: 10px 10px 0 0;
-                    transition: all .5s;
-                }
-
-                .item figure{
-                    overflow: hidden;
-                }
-                
-                .item:hover img{
-                    transform: scale(1.2);
+                    border-radius: 50%;
+                    border-width: 0.1rem;
+                    object-fit: cover;
+                    width:100%;
+                    height:100%;
                 }
                 
             }
 
-            
+            .main-i1-1-1-1 {
+                background-color: $color-rosado;
+            }
 
+            .main-i1-1-2-1 {
+                background-color: $color-naranja;
+            }
+
+            .main-i1-1-3-1 {
+                background-color: $color-celeste;
+            }
+
+            .main-i1-1-4-1 {
+                background-color: $color-verde;
+            }
         }
     }
     
@@ -126,19 +131,12 @@
                 }
 
                 img {
+                    background-color: $color-blanco;
                     border-radius: 50%;
                     border-width: 0.1rem;
                     object-fit: cover;
                     width:100%;
                     height:100%;
-                }
-
-                .circulo-colecciones {
-                    background-color: $color-blanco;
-                    border-radius: 50%;
-                    border-width: 0.1rem;
-                    width: 25rem;
-                    height: 25rem;
                 }
             }
         }
