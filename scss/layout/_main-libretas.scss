@@ -1,0 +1,25 @@
+.main-l {
+    padding-top: 10.8rem;
+    overflow: hidden;
+
+    .banner-l1 {
+        .banner-l1-1 {
+            img {
+                display: block;
+                margin: 0rem;
+                width: 100%;
+                height: 600px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        }
+        
+        .banner-l1-2 {
+            img {
+                display: none;
+            }
+        }
+    }
+}

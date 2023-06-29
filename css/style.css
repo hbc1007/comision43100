@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,9 @@
   text-decoration: none; }
 
 html {
+  /* NOTA
+    html se establece en 62,5% para que todas las mediciones REM en Skeleton
+    se basan en un tamaño de 10px. Así que básicamente 1.5rem = 15px :) */
   /*1 rem = 10 px*/
   font-size: 62.5%; }
 
@@ -100,7 +104,7 @@ h6 {
   top: 5rem;
   right: 0;
   background-color: white;
-  width: 50rem;
+  width: 40rem;
   z-index: 1;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem; }
@@ -108,25 +112,25 @@ h6 {
 .cart-product {
   display: flex;
   flex-flow: none;
-  flex-direction: row;
+  flex-direction: row wrap;
   justify-content: space-between;
   align-content: none;
   align-items: center;
-  column-gap: 4rem;
+  column-gap: 2rem;
   row-gap: none;
-  padding: 3rem;
+  padding: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .info-cart-product {
-  display: flex;
-  flex-flow: none;
-  flex-direction: none;
+  width: 40rem;
+  display: grid;
+  grid-template-columns: 2rem 20rem 8rem;
+  grid-template-rows: 1fr;
   justify-content: space-between;
   align-content: none;
   align-items: none;
   column-gap: none;
-  row-gap: none;
-  flex: 0.8; }
+  row-gap: none; }
 
 .titulo-producto-carrito {
   font-size: 1.6rem;
@@ -401,6 +405,21 @@ h6 {
         width: 100%;
         height: 100%; }
 
+.main-o {
+  padding-top: 10.8rem;
+  overflow: hidden; }
+  .main-o .banner-o1 .banner-o1-1 img {
+    display: block;
+    margin: 0rem;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  .main-o .banner-o1 .banner-o1-2 img {
+    display: none; }
+
 .main-g {
   padding-top: 13rem; }
 
@@ -441,15 +460,17 @@ h6 {
   border-radius: 1rem; }
 
 .item img {
-  width: 100%;
-  height: 100%;
+  border-radius: 1rem;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: black;
   object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
-  transition: all .5s; }
+  width: 100%;
+  height: 100%; }
 
 .info-product {
   font-size: 1.8rem;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 1.5rem;
   line-height: 2;
   display: flex;
   flex-flow: none;
@@ -464,10 +485,18 @@ h6 {
   font-size: 1.8rem;
   font-weight: 900; }
 
-.info-product button {
+.botonCompra {
   border: none;
   background: none;
   background-color: black;
+  color: white;
+  padding: 1.5rem 1rem;
+  cursor: pointer; }
+
+.botonColor {
+  border: none;
+  background: none;
+  background-color: #aba2e1;
   color: white;
   padding: 1.5rem 1rem;
   cursor: pointer; }
@@ -478,6 +507,57 @@ h6 {
 
 .hidden {
   display: none; }
+
+.main-c {
+  padding-top: 13rem; }
+
+.main-c div h1 {
+  margin: 0rem;
+  padding: 4rem 0rem 0rem 0rem;
+  text-align: center; }
+
+.banner-c1-1 img {
+  display: block;
+  margin: 0rem;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.banner-c1-2 {
+  display: none; }
+
+.main-l {
+  padding-top: 10.8rem;
+  overflow: hidden; }
+  .main-l .banner-l1 .banner-l1-1 img {
+    display: block;
+    margin: 0rem;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  .main-l .banner-l1 .banner-l1-2 img {
+    display: none; }
+
+.main-p {
+  padding-top: 10.8rem;
+  overflow: hidden; }
+  .main-p .banner-p1 .banner-p1-1 img {
+    display: block;
+    margin: 0rem;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  .main-p .banner-p1 .banner-p1-2 img {
+    display: none; }
 
 @media (max-width: 1440px) {
   /******************************************/

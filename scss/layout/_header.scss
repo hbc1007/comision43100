@@ -55,21 +55,29 @@
     top: 5rem;
     right: 0;
     background-color: $color-blanco;
-    width: 50rem;
+    width: 40rem;
     z-index: 1;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.20);
     border-radius: 1rem;
 }
 
 .cart-product{
-    @include flex(none, row, space-between, none, center, 4rem, none);
-    padding: 3rem;
+    //grid($grid-template-columns, $grid-template-rows, $justify-content, $align-content, $align-items, $column-gap, $row-gap)
+    //@include grid(none, 1rem 1fr 2rem, flex-start, none, flex-start, 3rem, 3rem);
+    @include flex(none, row wrap, space-between, none, center, 2rem, none);
+    padding: 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 }
 
 .info-cart-product{
-    @include flex(none, none, space-between, none, none, none, none);
-    flex: 0.8;
+    width: 40rem;
+    @include grid(2rem 20rem 8rem, 1fr, space-between, none, none, none, none);
+    //@include flex(none, none, space-between, none, none, none, none);
+    // flex: 1.8;
+
+    // display: flex;
+    // justify-content: space-between;
+    // flex: 2.8;
 }
 
 .titulo-producto-carrito{

@@ -1,0 +1,25 @@
+.main-p {
+    padding-top: 10.8rem;
+    overflow: hidden;
+
+    .banner-p1 {
+        .banner-p1-1 {
+            img {
+                display: block;
+                margin: 0rem;
+                width: 100%;
+                height: 600px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        }
+        
+        .banner-p1-2 {
+            img {
+                display: none;
+            }
+        }
+    }
+}

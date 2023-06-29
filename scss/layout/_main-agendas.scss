@@ -26,7 +26,7 @@
     @include grid(repeat(3, minmax(16rem, 32rem)), repeat(2, 1fr), center, none, flex-start, 3rem, 3rem);
     padding: 4rem;
     text-align: center;
-} 
+}
 
 .container-items div p{
     margin: 0;
@@ -39,28 +39,18 @@
 }
 
 .item img {
-    width: 100%;
-    height: 100%;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    border-style:solid;
+    border-color: $color-negro;
     object-fit: cover;
-    border-radius: 1rem 1rem 0 0;
-    transition: all .5s;
+    width:100%;
+    height:100%;
 }
-
-// .item figure{
-//     overflow: hidden;
-// }
-
-// .item:hover{
-//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-// }
-
-// .item:hover img{
-//     transform: scale(1.2);
-// }
 
 .info-product{
     font-size: 1.8rem;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1.5rem;
     line-height: 2;
     @include flex(none, column, center, center, none, 1rem, 1rem);
 }
@@ -70,10 +60,28 @@
     font-weight: 900;
 }
 
-.info-product button{
+// .info-product button{
+//     border: none;
+//     background: none;
+//     background-color: $color-negro;
+//     color: $color-blanco;
+//     padding: 1.5rem 1rem;
+//     cursor: pointer;
+// }
+
+.botonCompra{
     border: none;
     background: none;
     background-color: $color-negro;
+    color: $color-blanco;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+}
+
+.botonColor{
+    border: none;
+    background: none;
+    background-color: $color-lila;
     color: $color-blanco;
     padding: 1.5rem 1rem;
     cursor: pointer;

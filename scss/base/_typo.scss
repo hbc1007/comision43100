@@ -1,4 +1,7 @@
 html {
+    /* NOTA
+    html se establece en 62,5% para que todas las mediciones REM en Skeleton
+    se basan en un tamaño de 10px. Así que básicamente 1.5rem = 15px :) */
     /*1 rem = 10 px*/
     font-size: 62.5%;
 }
