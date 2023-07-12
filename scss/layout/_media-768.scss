@@ -4,29 +4,31 @@
     /***************HEADER - 768***************/
     /******************************************/
 
-    .header-1 {
-        .header-1-2 {
-            .header-1-2-1 {
-                padding: 2rem 1rem 2rem 1rem;
+    .logo {
+        padding-top: 1rem;
+        width: 16rem;
+        height: 4rem;
+    }
 
-                .logo {
-                    width: 15rem;
-                    height: 4rem;
-                }
-        
-                .icono {
-                    width: 2.4rem;
-                    height: 2.4rem;
-                    margin-right: 1rem;
-                }
-            }
+    .menu {
+        width: 2rem;
+        height: 2rem;
+    }
 
-            .navbar {
-                top: 8.5rem;
-                width: auto;
-                margin-left: -100%;
-            }
-        }
+    .icon-cart {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .count-products{
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .navbar {
+        top: 7.4rem;
+        width: auto;
+        margin-left: -100%;
     }
 
 
@@ -39,7 +41,7 @@
     /******************************************/
 
     .main-i {
-        padding-top: 7.4rem;
+        padding-top: 6.9rem;
 
         .banner-i1 {
             .banner-i1-1 {
@@ -74,20 +76,6 @@
     /*pagina agendas.html - 768               */
     /******************************************/
 
-    .banner-g1-1 {
-        display: none;
-    }
-
-    .banner-g1-2 {
-        display: block;
-        width: 100%;
-        margin: 0rem;
-    }
-
-    // .main-g1 {
-    //     @include grid(25rem, 1fr, center, none, center, none, 3rem);
-    // }
-
     .container-items {
         @include grid(25rem, 1fr, center, none, center, none, 3rem);
     }
@@ -100,7 +88,7 @@
     .footer-1 {
         .footer-1-1 {
             width: 100%;
-            @include grid(1fr, repeat(2, 1fr) repeat(2, 25rem), center, none, center, none, none);
+            @include grid(1fr, repeat(2, 1fr) repeat(2, 5rem), center, none, center, none, none);
 
             .footer-1-1-1 {
                 padding: 2rem 4rem 2rem 4rem;

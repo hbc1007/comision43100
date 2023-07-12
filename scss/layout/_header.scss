@@ -22,7 +22,7 @@
 .icon-cart {
     width: 3.2rem;
     height: 3.2rem;
-    stroke: #000;
+    stroke: $color-negro;
     margin-left: 1rem;
 }
 
@@ -62,8 +62,6 @@
 }
 
 .cart-product{
-    //grid($grid-template-columns, $grid-template-rows, $justify-content, $align-content, $align-items, $column-gap, $row-gap)
-    //@include grid(none, 1rem 1fr 2rem, flex-start, none, flex-start, 3rem, 3rem);
     @include flex(none, row wrap, space-between, none, center, 2rem, none);
     padding: 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
@@ -72,12 +70,6 @@
 .info-cart-product{
     width: 40rem;
     @include grid(2rem 20rem 8rem, 1fr, space-between, none, none, none, none);
-    //@include flex(none, none, space-between, none, none, none, none);
-    // flex: 1.8;
-
-    // display: flex;
-    // justify-content: space-between;
-    // flex: 2.8;
 }
 
 .titulo-producto-carrito{
@@ -155,7 +147,7 @@
     @include flex(none, row, center, none, none, 4rem, none);
 }
 
-.navbar ul li a{
+.navbar ul li a {
     display: block;
     font-size: 2rem;
     color: $color-negro;

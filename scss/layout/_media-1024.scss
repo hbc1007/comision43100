@@ -4,80 +4,73 @@
     /**************HEADER - 1024***************/
     /******************************************/
 
-    .header-1 {
-        .header-1-1 {
-            display: none;
-        }
-    
-        /***********************************************/
-    
-        .header-1-2 {
-            label {
-                display: block;
-
-                .menu {
-                    width: 2.4rem;
-                    height: 2.4rem;
-                }
-            }
-
-            .header-1-2-1 {
-                @include flex(row wrap, none, space-between, none, center, none, none);
-                padding: 1rem;
-                text-decoration: none;
-
-                .logo {
-                    width: 20.1rem;
-                    height: 7rem;
-                }
-                
-                .icono {
-                    width: 2.4rem;
-                    height: 2.4rem;
-                    margin-right: 1rem;
-                }
-            }
-
-            .navbar {
-                margin: 0rem;
-                position: absolute;
-                top: 8.5rem;
-                width: auto;
-                margin-left: -100%;
-    
-                ul {
-                    margin: 0rem;
-                    padding: 0rem;
-                    background-color: $color-lila;
-                    list-style: none;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    
-                    li {
-                        border-top: 0.05rem solid $color-blanco;
-
-                        a {
-                            display: block;
-                            font-size: 1.8rem;
-                            padding: 0.6rem 1.5rem 0.6rem 1.5rem;
-                            text-align: left;
-                            letter-spacing: 0.1rem;
-                        }
-                    }
-                }
-
-                .navbar-help {
-                    display: none;
-                }
-            }
-
-            #btn-menu:checked ~ .navbar {
-                margin: 0rem;
-            }
+    .header-1-2 {
+        label {
+            display: block;
         }
     }
 
-    
+    .logo {
+        padding-top: 1rem;
+        width: 18rem;
+        height: 5rem;
+    }
+
+    .menu {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .icon-cart {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .count-products{
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
+    .header-1-2-1 {
+        @include flex(row wrap, none, space-between, none, center, none, none);
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    .navbar {
+        margin: 0rem;
+        position: absolute;
+        top: 8.8rem;
+        width: auto;
+        margin-left: -100%;
+    }
+
+    .navbar ul {
+        margin: 0rem;
+        padding: 0rem;
+        background-color: $color-lila;
+        list-style: none;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .navbar ul li {
+        border-top: 0.05rem solid $color-blanco;
+    }
+        
+    .navbar ul li a {
+        display: block;
+        font-size: 1.8rem;
+        padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+        text-align: left;
+        letter-spacing: 0.1rem;
+    }
+
+    #btn-menu:checked ~ .navbar {
+        margin: 0rem;
+    }
+
+
     /******************************************/
     /***************MAIN - 1024****************/
     /******************************************/
@@ -87,7 +80,7 @@
     /******************************************/
 
     .main-i {
-        padding-top: 6.9rem;
+        padding-top: 9.4rem;
 
         .main-i1 {
             .main-i1-1 {
@@ -107,15 +100,47 @@
     /******************************************/
 
     .main-g {
-        padding-top: 8.9rem;
+        padding-top: 9.4rem;
+    }
 
-        // .main-g1 {
-        //     @include grid(repeat(2, minmax(16rem, 26rem)), repeat(2, 1fr), center, none, flex-start, 3rem, 3rem);
-        // }
+    .container-items {
+        @include grid(repeat(2, minmax(16rem, 26rem)), repeat(2, 1fr), center, none, flex-start, 3rem, 3rem);
+    }
 
-        .container-items {
-            @include grid(repeat(2, minmax(16rem, 26rem)), repeat(2, 1fr), center, none, flex-start, 3rem, 3rem);
-        }
+
+    /******************************************/
+    /*pagina contactos.html - 1024              */
+    /******************************************/
+
+    .main-o {
+        padding-top: 9.4rem;
+    }
+
+
+    /******************************************/
+    /*pagina cuadernos.html - 1024              */
+    /******************************************/
+
+    .main-c {
+        padding-top: 9.4rem;
+    }
+
+
+    /******************************************/
+    /*pagina libretas.html - 1024              */
+    /******************************************/
+
+    .main-l {
+        padding-top: 9.4rem;
+    }
+
+
+    /******************************************/
+    /*pagina planners.html - 1024              */
+    /******************************************/
+
+    .main-p {
+        padding-top: 9.4rem;
     }
 
 

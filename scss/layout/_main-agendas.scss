@@ -1,5 +1,6 @@
 .main-g {
-    padding-top: 13rem;
+    padding-top: 10.6rem;
+    overflow: hidden;
 }
 
 .main-g div h1 {
@@ -8,17 +9,6 @@
     text-align: center;
 }
 
-.banner-g1-1 {
-    display: block;
-    width: 100%;
-    margin: 0rem;
-}
-
-.banner-g1-2 {
-    display: none;
-}
-
-// .main-g1 {
 .container-items {
     margin: 0rem;
     width: 100%;
@@ -28,7 +18,7 @@
     text-align: center;
 }
 
-.container-items div p{
+.container-items div p {
     margin: 0;
     font-weight: bold;
     text-align: center;
@@ -93,6 +83,11 @@
 }
 
 .hidden{
+    display: none;
+}
+
+//SE OCULTA EN LA VENTANA DEL CARRITO DE COMPRAS
+.codi-prod-cart {
     display: none;
 }
 

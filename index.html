@@ -24,26 +24,47 @@
                 <div class="header-1-1">
                     <div></div>
                     <div>
-                        <a href="#"><img src="https://i.postimg.cc/rz65h56F/Logo-DGNottas-Negro.png" alt="Logo" class="logo"></a>
+                        <a href="./index.html"><img src="https://i.postimg.cc/rz65h56F/Logo-DGNottas-Negro.png" alt="Logo" class="logo"></a>
                     </div>
+
                     <div class="container-icon">
-                        <img src="./assets/img/Bolsa.png" alt="Bolsa" class="icon-cart">
-                        <div class="count-products">
-                            <span id="contador-productos">0</span>
+                        <!---------------------------------------------->
+                        <!--BOLSA COMPRAS - CONTADOR COMPRAS------------>
+                        <div class="container-cart-icon">
+                            <img class="icon-cart" src="./assets/img/Bolsa.png" alt="Bolsa">
+                            <div class="count-products">
+                                <span id="count-products">0</span>
+                            </div>    
                         </div>
+                        <!---------------------------------------------->
+                        <!--VENTANA DEL CARRITO DE COMPRAS-------------->
+                        <div class="container-cart-products hidden-cart">
+                            <div class="row-product hidden">
+                                <div class="cart-product">
+                                    <div class="info-cart-product">
+                                        <p class="cant-prod-cart">Cantidad</p>
+                                        <p class="titl-prod-cart">Nombre</p>
+                                        <p class="prec-prod-cart">Precio</p>
+                                        <p class="codi-prod-cart">Código</p>
+                                    </div>
+                                    <div>
+                                        <img class="icon-close" src="./assets/img/Equis.png" alt="Equis">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-total hidden">
+                                <h3>Total:</h3>
+                                <span class="total-pagar"></span>
+                            </div>
+                            <p class="cart-empty">El carrito está vacío</p>
+                        </div>
+                        <!---------------------------------------------->
                     </div>
                 </div>
                 <div class="header-1-2">
                     <input type="checkbox" id="btn-menu">
-                    <div class="header-1-2-1">
-                        <label for="btn-menu"><img src="./assets/img/Menu.png" alt="" class="menu"></label>
-                        <div>
-                            <a href="#"><img src="https://i.postimg.cc/rz65h56F/Logo-DGNottas-Negro.png" alt="Logo" class="logo"></a>
-                        </div>
-                        <div>
-                            <img src="./assets/img/Bolsa.png" alt="Bolsa" class="icon-cart">
-                        </div>
-                    </div>
+                    <label for="btn-menu"><img src="./assets/img/Menu.png" alt="" class="menu"></label>
+                    <!--MENU------------------------------------------------------->
                     <nav class="navbar">
                         <div class=".navbar-help"></div>
                         <ul>
@@ -137,6 +158,10 @@
                         </div>
                     </div>
                 </div>
+                <div id="listaProductos" class="container-items">
+                    <!--INSERTA PRODUCTOS OCULTOS PARA MOSTRAR LA BOLSA-->
+                    <!--AL CARGAR PAGINA WEB INDEX.HTML-->
+                </div>
             </div>
         </main>
 
@@ -191,6 +216,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/agendas.js"></script>
+    <script src="./js/logica.js"></script>
 </body>
 </html>
 

@@ -1,5 +1,5 @@
 .main-i {
-    padding-top: 10.8rem;
+    padding-top: 10.6rem;
     overflow: hidden;
 
     .banner-i1 {
@@ -141,3 +141,91 @@
         }
     }
 }
+
+// .container-items {
+//     display: none;
+// }
+
+
+.container-items {
+    margin: 0rem;
+    width: 100%;
+    background-color: $color-blanco;
+    @include grid(repeat(3, minmax(16rem, 32rem)), repeat(2, 1fr), center, none, flex-start, 3rem, 3rem);
+    padding: 4rem;
+    text-align: center;
+}
+
+.container-items div p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item{
+    border-radius: 1rem;
+}
+
+.item img {
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    border-style:solid;
+    border-color: $color-negro;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.info-product{
+    font-size: 1.8rem;
+    padding: 1.5rem 1.5rem;
+    line-height: 2;
+    @include flex(none, column, center, center, none, 1rem, 1rem);
+}
+
+.price{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+// .info-product button{
+//     border: none;
+//     background: none;
+//     background-color: $color-negro;
+//     color: $color-blanco;
+//     padding: 1.5rem 1rem;
+//     cursor: pointer;
+// }
+
+.botonCompra{
+    border: none;
+    background: none;
+    background-color: $color-negro;
+    color: $color-blanco;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+}
+
+.botonColor{
+    border: none;
+    background: none;
+    background-color: $color-lila;
+    color: $color-blanco;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+}
+
+.cart-empty{
+    padding: 2rem;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+//SE OCULTA EN LA VENTANA DEL CARRITO DE COMPRAS
+.codi-prod-cart {
+    display: none;
+}
+
