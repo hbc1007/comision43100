@@ -53,8 +53,16 @@
                                 </div>
                             </div>
                             <div class="cart-total hidden">
-                                <h3>Total:</h3>
-                                <span class="total-pagar"></span>
+                                <div class="flexi">
+                                    <div>
+                                        <h3>Total:</h3>
+                                        <span class="total-pagar"></span>
+                                    </div>
+                                    <div>
+                                        <button id="finalizar" class="btn btn-primary" style="--bs-btn-padding-y: 1rem; --bs-btn-padding-x: 2.5rem; --bs-btn-font-size: 1.4rem;">Finalizar compra</button>
+                                        <button id="vaciar" class="btn btn-success" style="--bs-btn-padding-y: 1rem; --bs-btn-padding-x: 2.5rem; --bs-btn-font-size: 1.4rem;">Vaciar carrito</button>
+                                    </div>
+                                </div>
                             </div>
                             <p class="cart-empty">El carrito está vacío</p>
                         </div>
@@ -83,13 +91,8 @@
 
         <main>
             <div class="main-l">
-                <div class="banner-l1">
-                    <ul class="banner-l1-1">
-                        <li><img src="https://i.postimg.cc/j5FBjmWv/Banner-Inicio-Desktop-X.jpg" alt="Banner-Inicio"></li>
-                    </ul>
-                    <ul class="banner-l1-2">
-                        <li><img src="https://i.postimg.cc/j55GttjL/Banner-Inicio-Movil-X.jpg" alt="Banner-Inicio"></li>
-                    </ul>
+                <div>
+                    <h1 class="h1-1">Libretas 2023</h1>
                 </div>
                 <div id="listaProductos" class="container-items">
                     <!--INSERTA PRODUCTOS OCULTOS PARA MOSTRAR LA BOLSA-->
@@ -148,7 +151,25 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- SWEET ALERT 2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/general.js"></script>
+    <script>
+        //----------------------------------------//
+        //FUNCION - GET A UN ARCHIVO JSON PROPIO
+        //----------------------------------------//
+        async function obtenerJsonProductos() {
+            const URLJSON = '/JSON/productos.json';
+            const respuesta = await fetch(URLJSON)
+                .then(resp => resp.json())
+                .then(datos => {
+                    const product =datos.libretas;
+                    renderizarProductos(product);
+                })
+        }
+        obtenerJsonProductos();
+    </script>
+    <script src="../js/logica2.js"></script>
 </body>
 </html>
 

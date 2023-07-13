@@ -1,27 +1,12 @@
 .main-p {
-    padding-top: 10.6rem;
+    padding-top: 9.6rem;
     overflow: hidden;
+}
 
-    .banner-p1 {
-        .banner-p1-1 {
-            img {
-                display: block;
-                margin: 0rem;
-                width: 100%;
-                height: 600px;
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-            }
-        }
-        
-        .banner-p1-2 {
-            img {
-                display: none;
-            }
-        }
-    }
+.main-p div h1 {
+    margin: 0rem;
+    padding: 4rem 0rem 0rem 0rem;
+    text-align: center;
 }
 
 //---------------------------------------------------------------//
@@ -50,4 +35,11 @@
 //SE OCULTA EN LA VENTANA DEL CARRITO DE COMPRAS
 .codi-prod-cart {
     display: none;
+}
+
+.flexi{
+    padding: 1rem 1rem;
+    width: 100%;
+    text-decoration: none;
+    @include flex(column wrap, center, center, center, flex-start, none, 2rem);
 }

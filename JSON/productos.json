@@ -50,42 +50,132 @@
             "imagen": "https://i.postimg.cc/6QVFbFKz/Cuaderno-01-Snoopy-A4.jpg",
             "nombre": "Cuaderno Snoopy A4",
             "descto": 10,
-            "precio": 69.90
+            "precio": 22.14
         },
         {
             "id": "C002",
             "imagen": "https://i.postimg.cc/6pq3XLqd/Cuaderno-02-Minimal-A4.jpg",
             "nombre": "Cuaderno Minimal A4",
             "descto": 10,
-            "precio": 69.90
+            "precio": 18.50
         },
         {
             "id": "C003",
             "imagen": "https://i.postimg.cc/WzSNRhPW/Cuaderno-03-Pastels-A4.jpg",
             "nombre": "Cuaderno Pastels A4",
             "descto": 20,
-            "precio": 129.90
+            "precio": 18.50
         },
         {
             "id": "C004",
             "imagen": "https://i.postimg.cc/bNNYxHQK/Cuaderno-04-Tye-Dye-A4.jpg",
             "nombre": "Cuaderno Tye Dye A4",
             "descto": 15,
-            "precio": 99.90
+            "precio": 18.50
         },
         {
             "id": "C005",
             "imagen": "https://i.postimg.cc/sX4ySv1j/Cuaderno-05-Disney-Iconic-A4.jpg",
             "nombre": "Cuaderno Disney Iconic A4",
             "descto": 15,
-            "precio": 94.90
+            "precio": 22.14
         },
         {
             "id": "C006",
             "imagen": "https://i.postimg.cc/wMWpfZhn/Cuaderno-06-Unicolor-A4.jpg",
             "nombre": "Cuaderno Unicolor A4",
             "descto": 15,
-            "precio": 94.90
+            "precio": 18.50
+        }
+    ],
+
+    "libretas":[
+        {
+            "id": "L001",
+            "imagen": "https://i.postimg.cc/MKSs6fY8/Libreta-Disney-Iconic-A6.jpg",
+            "nombre": "Libreta Disney Iconic A6",
+            "descto": 5,
+            "precio": 18.94
+        },
+        {
+            "id": "L002",
+            "imagen": "https://i.postimg.cc/P5zQ5dMV/Libreta-Mickey-A6.jpg",
+            "nombre": "Libreta Mickey A6",
+            "descto": 5,
+            "precio": 18.94
+        },
+        {
+            "id": "L003",
+            "imagen": "https://i.postimg.cc/PJXPKkDJ/Libreta-Princesas-A6.jpg",
+            "nombre": "Libreta Princesas A6",
+            "descto": 5,
+            "precio": 18.94
+        },
+        {
+            "id": "L004",
+            "imagen": "https://i.postimg.cc/vHcxgbtH/Libreta-Snoopy-A6.jpg",
+            "nombre": "Libreta Snoopy A6",
+            "descto": 5,
+            "precio": 18.94
+        },
+        {
+            "id": "L005",
+            "imagen": "https://i.postimg.cc/ZYgKQ364/Libreta-Style-A6.jpg",
+            "nombre": "Libreta Style A6",
+            "descto": 5,
+            "precio": 14.30
+        },
+        {
+            "id": "L006",
+            "imagen": "https://i.postimg.cc/KYqRvW3g/Libreta-Donald-A6.jpg",
+            "nombre": "Libreta Donald A6",
+            "descto": 5,
+            "precio": 18.94
+        }
+    ],
+
+    "planners":[
+        {
+            "id": "H001",
+            "imagen": "https://i.postimg.cc/ZnFf7Lzb/Happy-Planner-Dotted-Lined.jpg",
+            "nombre": "HP Dotted Lined Notebook",
+            "descto": 10,
+            "precio": 47.94
+        },
+        {
+            "id": "H002",
+            "imagen": "https://i.postimg.cc/nLy0nWHV/Happy-Planner-Let-Your-Ideas-Bloom.jpg",
+            "nombre": "HP Let Your Ideas Bloom",
+            "descto": 10,
+            "precio": 47.94
+        },
+        {
+            "id": "H003",
+            "imagen": "https://i.postimg.cc/3xbtcRVv/Happy-Planner-Live-Your-Dream.jpg",
+            "nombre": "HP Live Your Dream",
+            "descto": 10,
+            "precio": 47.94
+        },
+        {
+            "id": "H004",
+            "imagen": "https://i.postimg.cc/fLdqXNH0/Happy-Planner-Mini-Lined.jpg",
+            "nombre": "HP Mini Lined Notebook",
+            "descto": 10,
+            "precio": 35.67
+        },
+        {
+            "id": "H005",
+            "imagen": "https://i.postimg.cc/hPcZJNVf/Happy-Planner-Seek-Joy.jpg",
+            "nombre": "HP Seek Joy",
+            "descto": 10,
+            "precio": 47.94
+        },
+        {
+            "id": "H006",
+            "imagen": "https://i.postimg.cc/Zq2DCRLS/Happy-Planner-Sketch-Paper.jpg",
+            "nombre": "HP Sketch Paper Notebook",
+            "descto": 10,
+            "precio": 47.94
         }
     ]
 }

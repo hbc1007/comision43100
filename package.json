@@ -165,8 +165,8 @@
     "spdx-license-ids": "^3.0.13",
     "ssri": "^9.0.1",
     "stdout-stream": "^1.4.1",
-    "string-width": "^4.2.3",
     "string_decoder": "^1.3.0",
+    "string-width": "^4.2.3",
     "strip-ansi": "^6.0.1",
     "strip-indent": "^3.0.0",
     "supports-color": "^7.2.0",
@@ -198,5 +198,5 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "El proyecto consta de un carrito de compras con productos de expresión social.\r Es un piloto para la empresa donde trabajo.\r El sitio web consta de 6 páginas HTML\r La página Agendas.html es la única en donde se ha implementado el carrito de compras.\r Falta implementar la bolsa del carrito de compras en las demás páginas de venta.\r Falta ajustar el responsive en todas las páginas.\r También queda pendiente agregar descuentos, impuestos, entre otras."
 }

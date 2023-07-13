@@ -1,5 +1,5 @@
 .main-c {
-    padding-top: 10.6rem;
+    padding-top: 9.6rem;
     overflow: hidden;
 }
 
@@ -90,4 +90,12 @@
 .codi-prod-cart {
     display: none;
 }
+
+.flexi{
+    padding: 1rem 1rem;
+    width: 100%;
+    text-decoration: none;
+    @include flex(column wrap, center, center, center, flex-start, none, 2rem);
+}
+
 
