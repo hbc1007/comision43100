@@ -23,3 +23,31 @@
         }
     }
 }
+
+//---------------------------------------------------------------//
+
+.info-product{
+    font-size: 1.8rem;
+    padding: 1.5rem 1.5rem;
+    line-height: 2;
+    @include flex(none, column, center, center, none, 1rem, 1rem);
+}
+
+.price{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.cart-empty{
+    padding: 2rem;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+//SE OCULTA EN LA VENTANA DEL CARRITO DE COMPRAS
+.codi-prod-cart {
+    display: none;
+}

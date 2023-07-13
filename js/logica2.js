@@ -1,69 +1,11 @@
-//---------------------------------------------------------------------------------------//
-//CLASE - PRODUCTOS EN CARRITO
-//---------------------------------------------------------------------------------------//
-class clsProducto {
-    constructor(obj) {
-        this.quantity = parseFloat(obj.quantity),
-        this.name = obj.name,
-        this.price = parseFloat(obj.price),
-        this.id = obj.id
-    }
-}
-
-
 let todosProductos = [];
-let cantCarrito = 0;
 let contenedorProductos = document.getElementById('listaProductos');
-let cartaInfo = document.querySelector('.cart-product');
 let filaProductos = document.querySelector('.row-product');
 let listaProductos = document.querySelector('.container-items');
 let listaBolsa = document.querySelector('.container-cart-icon');
 let valorTotal = document.querySelector('.total-pagar');
-let contProduct = document.querySelector('#count-products');
 let cartEmpty = document.querySelector('.cart-empty');
 let cartTotal = document.querySelector('.cart-total');
-
-
-//---------------------------------------------------------------------------------------//
-//FUNCION - CANTIDAD TOTAL EN BOLSA DEL CARRITO DE COMPRAS
-//---------------------------------------------------------------------------------------//
-function cantidadBolsa(){
-    let productos = [];
-    const almacenados = JSON.parse(localStorage.getItem('todos-Productos'));
-    if (almacenados != null){
-        for (const objeto of almacenados)
-        //INSERTA EN LA CLASE clsProductos TODO HAY EN EL LOCALSTORAGE
-        productos.push(new clsProducto(objeto));
-    
-        //SUMA LA CANTIDAD DE PRODUCTOS PARA QUE SE MUESTRE EN LA BOLSA
-        for (const producto of productos){
-            cantCarrito += producto.quantity;
-        }
-    }
-}
-
-//---------------------------------------------------------------------------------------//
-//FUNCION - RENDERIZACION DE PRODUCTOS
-//---------------------------------------------------------------------------------------//
-function renderizarProductos(objProductos){
-    //VACIAMOS EL CONTENEDOR PARA EVITAR DUPLICADOS
-    contenedorProductos.innerHTML='';
-    //CARGAMOS LAS CARTAS DE LOS PRODUCTOS SOLICITADOS
-    for(const itemProducto of objProductos){
-        contenedorProductos.innerHTML+=`
-        <div class="item">
-            <figure>
-                <img src="${itemProducto.imagen}" alt="Agendas">
-            </figure>
-            <div class="info-product">
-                <p class="name">${itemProducto.nombre}</p>
-                <p class="price">${formatearValor(itemProducto.precio,2)}</p>
-                <button id="${itemProducto.id}" class="btn-add-cart botonCompra">Añadir al carrito</button>
-            </div>
-        </div>
-        `;
-    }
-}
 
 
 //---------------------------------------------------------------------------------------//
@@ -79,44 +21,11 @@ function cambiarColorBotones () {
             boton.classList.replace('botonColor','botonCompra');
         }
     }
+
+    console.log('LOGICA2: Se ha usado la función cambiarColorBotones');
 }
 
-
-//---------------------------------------------------------------------------------------//
-//FUNCION - FORMATO NUMEROS
-//---------------------------------------------------------------------------------------//
-function formatearValor(valor, decimal){
-    const formateador = new Intl.NumberFormat("es-PE", {
-        style: "currency",
-        currency: "PEN",
-        maximumFractionDigits: decimal,
-    });
-    return formateador.format(valor);
-};
-
-
-
-
-//---------------------------------------------------------------------------------------//
-//---------------------------------------------------------------------------------------//
-//---------------------------------------------------------------------------------------//
-//---------------------------------------------------------------------------------------//
-renderizarProductos(productos);
 cambiarColorBotones();
-cantidadBolsa();
-contProduct.innerText = cantCarrito;
-
-
-//---------------------------------------------------------------------------------------//
-//FUNCION FLECHA - MUESTRA U OCULTA VENTANA DEL CARRITO DE COMPRAS AL DAR CLICK EN LA BOLSA
-//---------------------------------------------------------------------------------------//
-const botonBolsaCompras = document.querySelector('.container-cart-icon');
-const contenedorCartaProductos = document.querySelector('.container-cart-products');
-
-botonBolsaCompras.addEventListener('click', () => {
-    contenedorCartaProductos.classList.toggle('hidden-cart');
-    vistaHTML();
-});
 
 
 //---------------------------------------------------------------------------------------//
@@ -174,6 +83,8 @@ listaProductos.addEventListener('click', e => {
 
         //AGREGA DATOS DEL CARRITO DE COMPRAS EN EL LOCAL STORAGE
         localStorage.setItem("todos-Productos", JSON.stringify(todosProductos));
+
+        console.log('LOGICA2: Se ha usado la función flecha listaProductos');
         vistaHTML();
     }
 })
@@ -191,6 +102,8 @@ filaProductos.addEventListener('click', e => {
         todosProductos = todosProductos.filter(product => product.id !== idPro);
         //GUARDA EN EL LOCAL STORAGE
         localStorage.setItem("todos-Productos", JSON.stringify(todosProductos));
+
+        console.log('LOGICA2: Se ha usado la función flecha filaProductos');
         vistaHTML();
     }
 });
@@ -242,4 +155,6 @@ const vistaHTML = () =>{
     let valorFormat = formatearValor(`${total}`, 2);
     valorTotal.innerText = valorFormat;
     contProduct.innerText = totalOfProductos;
+
+    console.log('LOGICA2: Se ha usado la función flecha vistaHTML');
 }

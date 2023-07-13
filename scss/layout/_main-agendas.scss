@@ -42,7 +42,7 @@
     font-size: 1.8rem;
     padding: 1.5rem 1.5rem;
     line-height: 2;
-    @include flex(none, column, center, center, none, 1rem, 1rem);
+    @include flex(row-gap, none, center, center, none, 1rem, 1rem);
 }
 
 .price{
@@ -82,8 +82,15 @@
     text-align: center;
 }
 
-.hidden{
+.hidden {
     display: none;
+}
+
+.flexi{
+    padding: 1rem 1rem;
+    width: 100%;
+    text-decoration: none;
+    @include flex(column wrap, center, center, center, flex-start, none, 2rem);
 }
 
 //SE OCULTA EN LA VENTANA DEL CARRITO DE COMPRAS
